@@ -15,7 +15,7 @@ print_r( $rowsequipo);
 
 echo $rowsequipo['CONTRASE�A'];
 
-if($rowsequipo['CONTRASE�A']=="IngBio"){
+if($rowsequipo['AP_PATERNO']=="Lopez"){
   echo "Si señol";
 }else {
   echo "Nel pastel";
