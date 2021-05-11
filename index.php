@@ -12,4 +12,12 @@ $stmt2 = $conn->query("SELECT * FROM empleado WHERE empleado.NUM_EMPLEADO = 1");
 $rowsequipo = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 print_r( $rowsequipo);
+
+echo $rowsequipo['CONTRASEÑA'];
+
+if($rowsequipo['CONTRASEÑA']=="IngBio"){
+  echo "Si señol";
+}else {
+  echo "Nel pastel";
+}
 ?>
