@@ -13,7 +13,7 @@ $rowsequipo = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 print_r( $rowsequipo);
 
-echo $rowsequipo['CONTRASE�A'];
+echo $rowsequipo['AP_PATERNO'];
 
 if($rowsequipo['AP_PATERNO']=="Lopez"){
   echo "Si señol";
