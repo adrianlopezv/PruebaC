@@ -8,7 +8,7 @@ try {
     die("Could not connect to the database $dbname :" . $pe->getMessage());
 }
 
-$stmt2 = $conn->query("SELECT * FROM empleado where empleado.NUM_EMPLEADO == 1");
+$stmt2 = $conn->query("SELECT * FROM empleado WHERE empleado.NUM_EMPLEADO = 1");
 $rowsequipo = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 print_r( $rowsequipo);
