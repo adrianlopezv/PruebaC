@@ -13,9 +13,9 @@ $rowsequipo = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
 print_r( $rowsequipo);
 
-echo $rowsequipo['CONTRASEÑA'];
+echo $rowsequipo['CONTRASE�A'];
 
-if($rowsequipo['CONTRASEÑA']=="IngBio"){
+if($rowsequipo['CONTRASE�A']=="IngBio"){
   echo "Si señol";
 }else {
   echo "Nel pastel";
