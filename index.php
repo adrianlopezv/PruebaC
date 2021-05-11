@@ -9,13 +9,14 @@ try {
 }
 
 $stmt2 = $conn->query("SELECT * FROM empleado WHERE empleado.NUM_EMPLEADO = 1");
-$rowsequipo = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+$rowsequipo = $stmt2->fetch(PDO::FETCH_ASSOC);
 
 print_r( $rowsequipo);
 
-echo $rowsequipo['AP_PATERNO'];
+echo("\n");
+echo ("Aqui esta la contra: ".$rowsequipo['CONTRASEÑA']);
 
-if($rowsequipo['AP_PATERNO']=="Lopez"){
+if($rowsequipo['CONTRASEÑA']=="IngBio"){
   echo "Si señol";
 }else {
   echo "Nel pastel";
